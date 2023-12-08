@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /example
+      link: /guide/index
     - theme: alt
       text: View on Google Play
       link: https://play.google.com/store/apps/details?id=com.shimnssso.headonenglish
