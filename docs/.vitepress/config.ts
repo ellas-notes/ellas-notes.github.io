@@ -6,6 +6,21 @@ export default defineConfig({
   title: "Ella's Notes",
   description: 'Vite & Vue powered static site generator.',
 
+  head: [
+    [
+      'script',
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-P9T79T362G' }
+    ],
+    [
+      'script',
+      {},
+      `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P9T79T362G');`
+    ]
+  ],
+
   themeConfig: {
     logo: { src: '/logo_29.png', width: 24, height: 24 },
     
