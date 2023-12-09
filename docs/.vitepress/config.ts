@@ -7,6 +7,8 @@ export default defineConfig({
   description: 'Vite & Vue powered static site generator.',
 
   themeConfig: {
+    logo: { src: '/logo_29.png', width: 24, height: 24 },
+    
     nav: [
       { text: 'Guide', link: '/guide/getting-started' },
       { text: 'Google Play', link: 'https://play.google.com/store/apps/details?id=com.shimnssso.headonenglish' },
