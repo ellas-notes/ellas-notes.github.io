@@ -45,8 +45,11 @@ export default defineConfig({
         text: 'Introduction',
         items: [
           { text: 'Getting Started', link: '/guide/getting-started' },
+          { text: 'Sheets 만들기', link: '/guide/google-sheet' },
+          { text: 'Sheets 불러오기', link: '/guide/load-sheet' },
+          { text: 'Sheets 공유하기', link: '/guide/share' },
           { text: '공개 Sheets', link: '/guide/template' },
-          { text: 'Google Sheets 양식', link: '/guide/google-sheet' },
+          
           // ...
         ],
       },
