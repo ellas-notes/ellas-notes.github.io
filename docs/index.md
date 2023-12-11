@@ -18,17 +18,17 @@ hero:
 
 features:
   - icon: 📝
-    title: Focus on Your Content
-    details: Effortlessly create beautiful documentation sites with just markdown.
+    title: 미디어 재생
+    details: 유튜브나 온라인상의 미디어 url 연결해서 재생
   - icon: 🎨
-    title: Ship Fast Sites
-    details: Fast initial load with static HTML, fast post-load navigation with client-side routing.
+    title: 텍스트 강조
+    details: 메인 텍스트에서 특정 부분을 가리거나 강조
   - icon: 📚
-    title: Test
-    details: Fast initial load with static HTML, fast post-load navigation with client-side routing.
+    title: 퀴즈
+    details: 문장 순서 맞추기
   - icon: 📅
-    title: Test2
-    details: Fast initial load with static HTML, fast post-load navigation with client-side routing.
+    title: 학습이력
+    details: 달력에 학습이력 표시
 ---
 
 <style>
