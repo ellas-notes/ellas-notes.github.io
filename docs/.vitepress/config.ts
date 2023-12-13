@@ -26,6 +26,7 @@ export default defineConfig({
     
     nav: [
       { text: 'Guide', link: '/guide/getting-started' },
+      { text: 'Privacy Policy', link: '/privacy' },
       { text: 'Google Play', link: 'https://play.google.com/store/apps/details?id=com.shimnssso.headonenglish' },
 
       // {
