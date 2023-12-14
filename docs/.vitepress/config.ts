@@ -64,13 +64,6 @@ export default defineConfig({
           // ...
         ],
       },
-      {
-        // text: 'Etc',
-        items: [
-          { text: '개인정보 처리방침', link: '/privacy' },
-          // ...
-        ],
-      },
     ],
     
     outline: { level: [2, 3], }
