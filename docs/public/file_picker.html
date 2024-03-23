@@ -15,7 +15,6 @@
 
 <script type="text/javascript">
   
-  console.log("test");
   /* exported gapiLoaded */
   /* exported gisLoaded */
   /* exported handleAuthClick */
@@ -36,6 +35,7 @@
   let accessToken = null;
   let pickerInited = false;
   let gisInited = false;
+  let pickedSheetId = null;
 
 
   document.getElementById('authorize_button').style.visibility = 'hidden';
@@ -94,6 +94,7 @@
         throw (response);
       }
       accessToken = response.access_token;
+      console.log("handleAuthClick(). accessToken: " + accessToken);
       document.getElementById('signout_button').style.visibility = 'visible';
       document.getElementById('authorize_button').innerText = 'Refresh';
       await createPicker();
@@ -107,6 +108,16 @@
       // Skip display of account chooser and consent dialog for an existing session.
       tokenClient.requestAccessToken({prompt: ''});
     }
+  }
+
+  function setAccessToken(token) {
+    accessToken = token;
+    console.log("setAccessToken(): " + accessToken);
+  }
+
+  function getFileId() {    
+    console.log("getFileId(): " + pickedSheetId);
+    return pickedSheetId;
   }
 
   /**
@@ -128,8 +139,11 @@
    */
   function createPicker() {
     console.log("createPicker()");
-    const view = new google.picker.View(google.picker.ViewId.DOCS);
+    const view = new google.picker.DocsView(google.picker.ViewId.SPREADSHEETS);
     view.setMimeTypes('application/vnd.google-apps.spreadsheet');
+    view.setQuery('EN1_');
+    view.setMode(google.picker.DocsViewMode.LIST);
+
     const picker = new google.picker.PickerBuilder()
         .enableFeature(google.picker.Feature.NAV_HIDDEN)
         .enableFeature(google.picker.Feature.MULTISELECT_ENABLED)
@@ -153,6 +167,7 @@
       const document = data[google.picker.Response.DOCUMENTS][0];
       const fileId = document[google.picker.Document.ID];
       console.log(fileId);
+      pickedSheetId = fileId;
       const res = await gapi.client.drive.files.get({
         'fileId': fileId,
         'fields': '*',
