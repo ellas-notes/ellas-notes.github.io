@@ -4,6 +4,7 @@
 <head>
   <title>Picker API Quickstart</title>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -168,13 +169,26 @@
 
       const picker = new google.picker.PickerBuilder()
         .enableFeature(google.picker.Feature.NAV_HIDDEN)
-        .enableFeature(google.picker.Feature.MULTISELECT_ENABLED)
+        .setDeveloperKey(API_KEY)
+        .setAppId(APP_ID)
         .setOAuthToken(token)
         .addView(view)
-        .addView(new google.picker.DocsUploadView())
-        .setCallback(pickerCallback)
+        .setCallback(myPickerCallback)
         .build();
       picker.setVisible(true);
+    }
+
+    async function myPickerCallback(data) {
+      console.log("myPickerCallback(). action: ", data.action)
+
+      if (data.action === google.picker.Action.PICKED) {
+        const document = data[google.picker.Response.DOCUMENTS][0];
+        console.log(document);
+        window.flutter_inappwebview.callHandler('handlerSheetSelected', document);
+      }
+      else if (data.action === google.picker.Action.CANCEL) {
+        window.flutter_inappwebview.callHandler('handlerCanceled');
+      }
     }
 
     /**
