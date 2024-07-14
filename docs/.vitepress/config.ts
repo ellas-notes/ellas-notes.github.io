@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   lang: 'en-US',
   title: "Ella's Notes",
-  description: 'Vite & Vue powered static site generator.',
+  description: "스스로 누적복습 - Ella's Notes",
 
   head: [
     [
