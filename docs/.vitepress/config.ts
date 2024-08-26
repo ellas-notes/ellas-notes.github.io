@@ -57,10 +57,11 @@ export default defineConfig({
       {
         text: 'Features',
         items: [
+          { text: '퀴즈', link: '/feature/quiz' },
+          { text: 'ChatGPT 연결', link: '/feature/chatgpt' },
+          { text: '학습 이력', link: '/feature/history' },
           { text: '미디어 재생', link: '/feature/media' },
           { text: '텍스트 강조', link: '/feature/highlight' },
-          { text: '퀴즈', link: '/feature/quiz' },
-          { text: '학습 이력', link: '/feature/history' },
           // ...
         ],
       },

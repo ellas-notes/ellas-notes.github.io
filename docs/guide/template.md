@@ -13,15 +13,10 @@
 - [{STUDIAN CLASS} 김재우의 영어회화100](https://www.studianclass.com/course/course_view.jsp?id=156834&cid=#course-view-156834)
 ![김재우의 영어회화 100](https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791192389172.jpg)
 
-## 정면돌파 스피킹
-- [📚 Google Sheets](https://docs.google.com/spreadsheets/d/1veQzV0fyYHO_4Lu2l33ZRXbjy47_q8EI1nwVAQXJcVQ/edit?usp=sharing)
-- [EBS 매일 10분 영어 - 이현석의 정면돌파 스피킹](https://home.ebse.co.kr/10mins_lee2/main)
-![정면돌파 스피킹](https://static.ebs.co.kr/images/public/courses/2021/02/19/20/ER2017H0SPE01ZZ/8f8797ce-8085-4a0f-9681-4df159c3de17.jpg)
-
-## 입트영 60 (일상생활편)_template
-- [📚 Google Sheets](https://docs.google.com/spreadsheets/d/1GeK1Kz8GycGMYviq52sqV3-WKoI8Gw7llSOvJekp01s/edit?usp=sharing)
-- [{네이버 쇼핑} 이현석의 입이 트이는 영어 최고의 스피킹 60: 일상생활 편](https://book.naver.com/bookdb/book_detail.nhn?bid=16744854)
-![입트영 60 (일상생활편)](https://image.kyobobook.co.kr/images/book/xlarge/937/x9788954753937.jpg)
+## 김재우의 영어회화 100 대표 문장_template
+- [📚 Google Sheets](https://docs.google.com/spreadsheets/d/1cDz8ieXCfxBB0wX3fX67Zhtys84P6FFyRpc0qaRouC0/edit?usp=sharing)
+- [{STUDIAN CLASS} 김재우의 영어회화100](https://www.studianclass.com/course/course_view.jsp?id=156834&cid=#course-view-156834)
+![김재우의 영어회화 100](https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791192389172.jpg)
 
 ## 비즈니스 이메일 주요 표현 (ChatGPT) 
 - [📚 Google Sheets](https://docs.google.com/spreadsheets/d/1AoXGMWJU1-22IS2oi2rTKsGpzXE50u4azPIJKY_1PjY/edit?usp=sharing)

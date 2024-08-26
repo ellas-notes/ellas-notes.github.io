@@ -17,18 +17,23 @@ hero:
     alt: Test
 
 features:
-  - icon: 📝
-    title: 미디어 재생
-    details: 유튜브나 온라인상의 미디어 url 연결해서 재생
-  - icon: 🎨
-    title: 텍스트 강조
-    details: 메인 텍스트에서 특정 부분을 가리거나 강조
   - icon: 📚
     title: 퀴즈
     details: 문장 순서 맞추기
+    link: feature/quiz
+  - icon: 📞
+    title: ChatGPT 연결
+    details: 음성 대화를 위한 ChatGPT 연결
+    link: feature/chatgpt
   - icon: 📅
     title: 학습이력
     details: 달력에 학습이력 표시
+    link: feature/history
+  - icon: 📽️
+    title: 미디어 재생
+    details: 유튜브나 온라인상의 미디어 url 연결
+    link: media
+
 ---
 
 <style>
